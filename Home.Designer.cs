@@ -37,7 +37,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(215, 38);
+            this.label1.Location = new System.Drawing.Point(217, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 48);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(396, 38);
+            this.label2.Location = new System.Drawing.Point(386, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 48);
             this.label2.TabIndex = 1;
@@ -57,11 +57,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(199, 147);
+            this.button1.Location = new System.Drawing.Point(188, 237);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(382, 56);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Documents";
+            this.button1.Text = "File Explorer";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
