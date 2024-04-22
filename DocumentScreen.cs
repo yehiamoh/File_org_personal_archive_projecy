@@ -30,22 +30,18 @@ namespace File_org_personal_archive_projecy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var folderBrowserDialog = new FolderBrowserDialog())
+            using (var folderBrowserDialog = new FolderBrowserDialog())    // creating object from Folder browser
             {
-                folderBrowserDialog.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                DialogResult result = folderBrowserDialog.ShowDialog();
-                if (result == DialogResult.OK)
+                folderBrowserDialog.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);  // open desktop as initial folder directory 
+                DialogResult result = folderBrowserDialog.ShowDialog(); // checkhing result of dialoug 
+                if (result == DialogResult.OK)   // if the result it ok     
                 {
-                    string selectedFolderPath = folderBrowserDialog.SelectedPath;
-
-                    // Get all files in the selected folder
-                    string[] files = Directory.GetFiles(folderBrowserDialog.SelectedPath);
-
-                    // Display the files in a list box (or any other control you prefer)
-                    listBox1.Items.Clear(); // Clear any existing items
+                    string selectedFolderPath = folderBrowserDialog.SelectedPath;  // create string of folder path that we initialize to desktop in line 35 
+                    string[] files = Directory.GetFiles(selectedFolderPath);      // creating array that get the files of the selected folder
+                    listBox1.Items.Clear();      // clear the list box before  getting new ones
                     foreach (string file in files)
                     {
-                        listBox1.Items.Add(Path.GetFileName(file));
+                        listBox1.Items.Add(Path.GetFileName(file)); // adding the files path in the UI
                     }
                 }
             }
