@@ -27,7 +27,6 @@ namespace File_org_personal_archive_projecy
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
            if(radioButton1.Checked)
@@ -121,9 +120,6 @@ namespace File_org_personal_archive_projecy
                 }
             }
         }
-
-
-
         public void getPicturesDocs()
         {
             using (var folderBrowserDialog = new FolderBrowserDialog())
@@ -152,8 +148,6 @@ namespace File_org_personal_archive_projecy
                 }
             }
         }
-
-
         private void button2_Click(object sender, EventArgs e)
         {
             getAllDocs();

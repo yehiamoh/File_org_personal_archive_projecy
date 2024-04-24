@@ -17,6 +17,7 @@ namespace File_org_personal_archive_projecy
             string name = textBox1.Text;
             Home home = new Home(name);
             home.Show();
+            //dfdfd
             
         }
     }
